@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio tomasild</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="validacion.js"></script>
+</head>
+<body>
+
+
+<!----------- MENU ----------->
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">tomas.ild</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">FORMACIÓN</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+    </div>
+
+    <!------- INICIO ---------->
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto1.jpg" alt="">
+            </div>
+            <h1>TOMÁS LANGER</h1>
+            <h2>Desarrollador web - Especialista en Marketing</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/tomaslangerduran/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/tomasild" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!---------SOBRE MI---------->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Tomás,</span> Ingeniero de Marketing del Instituto Profesional Duoc UC. Amante de la tecnología e innovación, en constante aprendizaje sobre desarrollo web, sostenibilidad, web3 y marketing digital.
+            Estudiante autotidacta de Desarrollo Web del programa ONE de Oracle Next Education en conjunto con Alura Latam. Mi actual enfoque es en el desarrollo web Frontend, aspirando a trabajar en proyectos que me brinden experiencia y nuevos conocimientos del área, proyectandome asi a trabajar en tecnologia y consolidar mi vida profesional.
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Edad</strong>
+                            28 años
+                        </li>
+                        <li>
+                            <strong>Nacionalidad</strong>
+                            Chileno
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            tomas.ild.work@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!---------intereses------------>
+
+                <div class="col">
+                    <h3>Intereses y pasatiempos</h3>
+                    <div class="contenedor-intereses">
+                        
+                        <div class="interes">
+                            <i class="fa fa-desktop" aria-hidden="true"></i>
+                            <span>TECNOLOGÍA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            <span>INNOVACIÓN</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>TREKKING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-cloud"></i>
+                            <span>CLOUD</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-coffee" aria-hidden="true"></i>
+                            <span>CHARLAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-cubes" aria-hidden="true"></i>
+                            <span>WEB3</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>VIDEOJUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-recycle" aria-hidden="true"></i>
+                            <span>SOSTENIBILIDAD</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-leaf" aria-hidden="true"></i>
+                            <span>ENERGIAS RENOVABLES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <span>CONSTRUCCION MODULAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a target="_blank" href="CV Tomas Langer.pdf" >Visualizar CV   </a><i class="fa fa-space-shuttle"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!---------------- SKILLS ------------>
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Hard Skill -->
+                <div class="col">
+                    <h3>Hard Skills</h3>
+                    <img src="img/hskills.jpg" class="img-skills" alt="">
+                    <ul class="lista-skills">
+                        <li class="skill"><span>Javascript</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:20%"></div>
+                        </div>
+                        <li class="skill"><span>HTML & CSS</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:80%"></div>
+                        </div>
+                        <li class="skill"><span>Photoshop</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:50%"></div>
+                        </div>
+                        <li class="skill"><span>After Fx</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:20%"></div>
+                        </div>
+                        <li class="skill"><span>Ilustrator</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:35%"></div>
+                        </div>
+                        <li class="skill"><span>Social Media Ads</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:85%"></div>
+                        </div>
+                        <li class="skill"><span>Community Manager</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:70%"></div>
+                        </div>
+                        <li class="skill"><span>Inglés</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:60%"></div>
+                        </div>
+                    </ul>
+                </div>
+                <!-- Soft Skills -->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <img src="img/sskills.jpg" class="img-skills" alt="">
+                    <ul class="lista-skills">
+                        <li class="skill"><span>Comunicación</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:80%"></div>
+                        </div>
+                        <li class="skill"><span>Trabajo en Equipo</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:100%"></div>
+                        </div>
+                        <li class="skill"><span>Creatividad</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:70%"></div>
+                        </div>
+                        <li class="skill"><span>Orientacion a resultados</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill" style="--width:70%"></div>
+                        </div>
+                        <li class="skill"><span>Excel</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill"style="--width:40%"></div>
+                        </div>
+                        <li class="skill"><span>Resolución de problemas</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill"style="--width:70%"></div>
+                        </div>
+                        <li class="skill"><span>Empatia</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill"style="--width:80%"></div>
+                        </div>
+                        <li class="skill"><span>Habilidad de servicio</span></li>
+                        <div class="barra-skill">
+                            <div class="progreso-skill"style="--width:90%"></div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------- Formaciones y Cursos ---------------->
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Formación y Cursos</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Ingenieria en Marketing</h4>
+                        <span class="casa">Duoc UC</span>
+                        <span class="fecha">2012 - 2016</span>
+                        <p>Titulado el año 2017 con dos votos de distinción
+                            Miembro del equipo ganador del concurso Marketing Challenge 2015
+                            sede DUOC UC Viña del Mar.
+                            </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Web3, Blockchain y Criptomonedas</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2021 - 2023 (en curso)</span>
+                        <p>Estudiante de estas nuevas tecnologias, principalmente por interés y para mantenerme al dia de las tendencias tecnologicas en crecimiento, y también como una oportunidad en un mercado en constante cambio.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Fullstack Web Developer</h4>
+                        <span class="casa">Alura Latam</span>
+                        <span class="fecha">2022 - 2023 (en curso)</span>
+                        <p>Estudiante del programa ONE de Oracle Next Education para Latinoamerica, en donde crearon una alianza con Alura Latam para impartir los cursos de acuerdo a las rutas planificadas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4>Marketing</h4>
+                        <div class="col">
+                            <div class="contenedor-cursos">
+                                <div class="cursos">
+                                    <span>Community Manager</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>Excel para Análisis de Datos</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>Introducción a Negocios Online</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>Transformación Digital para Empresas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Web3, Blockchain y Criptomonedas</h4>
+                        <div class="col">
+                            <div class="contenedor-cursos">
+                                <div class="cursos">
+                                    <span>Introducción a Finanzas Descentralizadas</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>Gestión de Criptoactivos</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>Economía Digital: BTC y Criptomonedas</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>Introducción a Inversiones en Finanzas Descentralizadas</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>Gestión Emocional de Inversión en Criptomonedas</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>Audiocurso de Fundamentos de Web3</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>Audiocurso de Historia de Bitcoin y Criptomonedas</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>Audiocurso de Historia de Ethereum y Smart Contracts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Fullstack Web Developer</h4>
+                        <div class="col">
+                            <div class="contenedor-cursos">
+                                <div class="cursos">
+                                    <span>LÓGICA DE PROGRAMACION / 1-3</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>HTML5 Y CSS3 / 1-4</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>GIT Y GITHUB: PRIMEROS PASOS</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>GIT Y GITHUB: CONTROLE Y COMPARTA SU CÓDIGO</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>FLEXBOX CSS: GUIA COMPLETA</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>CSS GRID: SIMPLIFICANDO LAYOUTS</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>LAYOUTS RESPONSIVOS: TRABAJANDO CON LAYOUTS MOBILE</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>ARQUITECTURA CSS</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>JAVASCRIPT: PRIMEROS PASOS </span>
+                                </div>
+                                <div class="cursos">
+                                    <span>JS EN LA WEB: MANIPULACIÓN DEL DOM</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>JS EN LA WEB: VALIDACION DE FORMULARIOS Y HTML5</span>
+                                </div>
+                                <div class="cursos">
+                                    <span>JAVASCRIPT: INTRODUCCIÓN A LA ORIENTACION A OBJETOS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- SECCION PORTFOLIO -->
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>WEB DEVELOPER PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/candado.jpg" alt="">
+                    <div class="overlay">
+                        <h3>ENCRIPTADOR DE TEXTO</h3>
+                        <p>Alura latam - 1er Challenge</p>
+                        <p>Este desafío consiste en una aplicación que encripta TEXTOS de acuerdo a reglas especificas, el texto puede encriptarse, desencriptarse y ser copiado utilizando botones.</p>
+                        <p>Puedes ver el repositorio <a href="https://github.com/tomasild/tomasild.github.io">AQUÍ</a></p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/estudiando.jpg"" alt="">
+                    <div class="overlay">
+                        <h3>JUEGO DEL AHORCADO</h3>
+                        <p>Alura latam - 2do Challenge</p>
+                        <p>EN PROCESO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/estudiando2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>E-COMMERCE</h3>
+                        <p>Alura latam - 3er Challenge</p>
+                        <p>EN PROCESO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/estudiando.jpg" alt="">
+                    <div class="overlay">
+                        <h3>PORTFOLIO</h3>
+                        <p>Alura latam - 4to Challenge</p>
+                        <p>Aquí se puede ver mi primer portfolio como Desarrollador Web Frontend</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/estudiando2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>PRO ESTHETIC FIT</h3>
+                        <p>Clínica estética</p>
+                        <p>Desarrollo y diseño de pagina web de la clínica, con funcion de botón de Whatsaoo y agendamiento de horas.</p>
+                        <p>EN PROCESO</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/estudiando.jpg" alt="">
+                    <div class="overlay">
+                        <h3>PRÓXIMAMENTE</h3>
+                        <p>Más proyectos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form action="" class="col" id="form">
+                    <input id="nombre" type="text" placeholder="Tú Nombre" required maxlength="50">
+                    <input id="tel" type="text" placeholder="Número telefónico" required pattern="4 ^(+?56)?(\s?)(0?9)(\s?)[987654]\d{7}$" minlength="9" maxlength="12" title="Mínimo 9 números">
+                    <input id="email" type="email" placeholder="Corre electrónico" required>
+                    <input id="asunto" type="text" placeholder="Asunto" required maxlength="50">
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje" maxlength="300"></textarea>
+                    <button>Enviar Mensaje <i class="fa-solid fa-paper-plane"></i><span class="overlay"></span>
+                    </button>
+                </form>
+                <div class="col">
+                    <img src="img/contacto1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a target="_blank" href="https://www.linkedin.com/in/tomaslangerduran/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://github.com/tomasild"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="footer_nombre">
+            <p>Desarrollado por <a href="index.html">Tomás Langer</a> 2022</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
